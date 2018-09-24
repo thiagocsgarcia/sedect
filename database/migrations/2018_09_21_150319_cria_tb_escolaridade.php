@@ -6,7 +6,7 @@ use Illuminate\Database\Migrations\Migration;
 
 class CriaTbEscolaridade extends Migration
 {
-    /**
+    /***
      * Run the migrations.
      *
      * @return void

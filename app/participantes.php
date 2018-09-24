@@ -31,4 +31,5 @@ class participantes extends Model
     ];
 
     protected $table = 'participantes';
+    
 }

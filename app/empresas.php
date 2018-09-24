@@ -26,10 +26,10 @@ class empresas extends Model
         'uf'
     ];
 
-    //Inserido para evitar problemas com a lingua portuguesa
+    /* Inserido para evitar problemas com a lingua portuguesa */
     protected $table = 'empresas';
 
-    //UM para MUITOS
+    /* UM para MUITOS */
     public function vagas() {
         return $this->hasMany(vagas::class, 'id_empresa');
     }

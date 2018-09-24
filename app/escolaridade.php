@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class escolaridade extends Model
 {
+    
     protected $fillable = [
         'id',
         'escolaridade'

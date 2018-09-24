@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class experiencia_profissional extends Model
 {
+    
     protected $fillable = [
         'id',
         'systemId',

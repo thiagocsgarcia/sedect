@@ -18,7 +18,7 @@ class formacao_profissional extends Model
 
     protected $table = 'formacao_profissional';
 
-    //MUITOS para UM
+    /* MUITOS para UM */
     public function user() {
         return $this->belongsTo(user::class, 'systemId');
     }

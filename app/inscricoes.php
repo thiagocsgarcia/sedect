@@ -16,11 +16,11 @@ class inscricoes extends Model
 
     protected $table = 'inscricoes';
 
-    //MUITOS para UM
+    /* MUITOS para UM */
     public function participantes() {
         return $this->belongsTo(participantes::class, 'id_participante');
     }
-    //UM para MUITOS
+    /* UM para MUITOS */
     public function vagas() {
         return $this->hasMany(vagas::class, 'id_vagas');
     }

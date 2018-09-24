@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class vagas extends Model
 {
+    
     protected $fillable = [
         'id',
         'id_empresa',

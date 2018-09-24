@@ -6,7 +6,7 @@ use Illuminate\Database\Migrations\Migration;
 
 class CriaFkExperienciaProfissional extends Migration
 {
-    /**
+    /***
      * Run the migrations.
      *
      * @return void
