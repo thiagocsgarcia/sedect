@@ -22,4 +22,5 @@ class formacao_profissional extends Model
     public function user() {
         return $this->belongsTo(user::class, 'systemId');
     }
+    
 }

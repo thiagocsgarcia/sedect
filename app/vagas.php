@@ -44,4 +44,5 @@ class vagas extends Model
     ];
 
     protected $table = 'vagas';
+    
 }

@@ -44,4 +44,5 @@ class CriaTbEmpresas extends Migration
     {
         Schema::dropIfExists('empresas');
     }
+    
 }

@@ -12,4 +12,5 @@ class escolaridade extends Model
     ];
 
     protected $table = 'escolaridade';
+    
 }

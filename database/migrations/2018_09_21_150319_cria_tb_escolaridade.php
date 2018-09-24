@@ -29,4 +29,5 @@ class CriaTbEscolaridade extends Migration
     {
         Schema::dropIfExists('escolaridade');
     }
+    
 }

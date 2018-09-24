@@ -34,4 +34,5 @@ class CriaTbExperienciaProfissional extends Migration
     {
         Schema::dropIfExists('experiencia_profissional');
     }
+    
 }

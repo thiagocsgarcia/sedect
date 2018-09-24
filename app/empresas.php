@@ -33,4 +33,5 @@ class empresas extends Model
     public function vagas() {
         return $this->hasMany(vagas::class, 'id_empresa');
     }
+    
 }

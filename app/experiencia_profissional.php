@@ -21,4 +21,5 @@ class experiencia_profissional extends Model
     public function user() {
         return $this->belongsTo(user::class, 'systemId');
     }
+    
 }
