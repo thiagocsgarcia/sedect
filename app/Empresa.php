@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class empresas extends Model
+class Empresa extends Model
 {
     protected $fillable = [
         'id',
@@ -31,7 +31,7 @@ class empresas extends Model
 
     /* UM para MUITOS */
     public function vagas() {
-        return $this->hasMany(vagas::class, 'id_empresa');
+        return $this->hasMany(Vagas::class, 'id_empresa');
     }
     
 }

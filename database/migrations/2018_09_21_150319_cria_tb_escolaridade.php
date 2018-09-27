@@ -13,7 +13,7 @@ class CriaTbEscolaridade extends Migration
      */
     public function up()
     {
-        Schema::create('escolaridade', function (Blueprint $table) {
+        Schema::create('escolaridades', function (Blueprint $table) {
             $table->increments('id');
             $table->string('escolaridade', 255);
             $table->timestamps();
@@ -27,7 +27,7 @@ class CriaTbEscolaridade extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('escolaridade');
+        Schema::dropIfExists('escolaridades');
     }
     
 }

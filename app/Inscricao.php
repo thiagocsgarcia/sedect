@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class inscricoes extends Model
+class Inscricao extends Model
 {
     protected $fillable = [
         'id',
@@ -18,11 +18,11 @@ class inscricoes extends Model
 
     /* MUITOS para UM */
     public function participantes() {
-        return $this->belongsTo(participantes::class, 'id_participante');
+        return $this->belongsTo(Participantes::class, 'id_participante');
     }
     /* UM para MUITOS */
     public function vagas() {
-        return $this->hasMany(vagas::class, 'id_vagas');
+        return $this->hasMany(Vagas::class, 'id_vagas');
     }
     
 }

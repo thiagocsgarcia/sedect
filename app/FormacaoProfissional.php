@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class formacao_profissional extends Model
+class FormacaoProfissional extends Model
 {
     protected $fillable = [
         'id',
@@ -20,7 +20,7 @@ class formacao_profissional extends Model
 
     /* MUITOS para UM */
     public function user() {
-        return $this->belongsTo(user::class, 'systemId');
+        return $this->belongsTo(User::class, 'systemId');
     }
     
 }

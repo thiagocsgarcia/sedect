@@ -13,14 +13,14 @@ class CriaTbExperienciaProfissional extends Migration
      */
     public function up()
     {
-        Schema::create('experiencia_profissional', function (Blueprint $table) {
+        Schema::create('experiencias_profissionais', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('systemId')->unsigned();
+            $table->integer('id_participante')->unsigned();
             $table->string('funcao', 255);
             $table->string('empregador', 255);
             $table->datetime('dt_inicio_exp');
             $table->string('periodo',255);
-            $table->longText('atividades_realizadas');
+            $table->text('atividades_realizadas');
             $table->timestamps();
         });
     }
